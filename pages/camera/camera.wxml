@@ -1,0 +1,10 @@
+<!--camera.wxml-->
+<view class="section">
+  <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/camera/uploadbg.png" id="uploadbg"></image>
+  <view class="uploadblock" bindtap="OpenCamera">
+    <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/camera/uploadbtn.png"></image>
+  </view>
+  <view class="uploadbtn">
+    <button style="background:url(http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/camera/btnbg.png);background-size:100% 100%;" bindtap="UploadImg">上传照片</button>
+  </view>
+</view>

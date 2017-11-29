@@ -1,0 +1,39 @@
+/* camera.wxss */
+#uploadbg{
+  width:100%;
+  height:100%;
+}
+
+.uploadblock{
+  width:680rpx;
+  height:340rpx;
+  position:absolute;
+  left:50%;
+  top:42%;
+  margin-left:-340rpx;
+  color:#3f2615;
+  text-align: center;
+  font-size:40rpx;
+}
+
+.uploadblock view{
+  margin-bottom:40rpx;
+}
+
+.uploadblock view text{
+  color:#f50d1e;
+}
+
+.uploadbtn{
+  position: absolute;
+  bottom:15%;
+  width: 100%;
+  text-align: center;
+}
+
+.uploadbtn button{
+  width:400rpx;
+  color:#fff;
+  height:90rpx;
+  line-height: 90rpx;
+}

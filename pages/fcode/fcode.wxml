@@ -1,0 +1,9 @@
+<!--fcode.wxml-->
+<view class="fcodeimg">
+  <image src="{{ QrCodeimg }}" id="qrcode"></image>
+  <image src="img/hook.png" id="hook" wx:if="{{ invalid }}"></image>
+</view>
+<view class="fcodestr">{{ QrCodeStr }}</view>
+<view class="refreshfcode">
+  <button bindtap="Refresh">刷新F码</button>
+</view>

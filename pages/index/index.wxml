@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="section">
+  <view class="imgcover" wx:if="{{ ShowImgCover }}">
+    <image src="{{ BgImg }}" id="BgImg"></image>
+    <view class="top">
+      <view class="left">
+        <image src="{{ LogoImg }}"></image>
+      </view>
+      <view class="right">
+        <image src="{{ StaticImg }}"></image>
+      </view>
+    </view> 
+  </view>
+  <view class="loadingcover" wx:if="{{ ShowLoadingCover }}">
+    <view class="loadingbar">
+       <view class="loadingtext"> 
+        <text>正在搜寻红包...</text>
+       </view> 
+      <view class="loadingbg" style='width:{{ LoadingWidth }}% '>
+          <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/index/loading-bar.png"></image>  
+      </view>
+    </view>
+  </view>
+</view>

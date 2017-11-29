@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="login">
+  <view class="loginlogo">
+    <image src="{{ LogoImg }}"></image>
+  </view>
+
+  <form bindsubmit="formSubmit">
+    <view class="forminput">
+      <image src="http://business.bim-u.com/WeChatSmallApplication/FCodeImg/index/user.png"></image>
+      <input type="number" name="userName"  placeholder="请输入手机号..." placeholder-class="placeholder" />
+    </view>
+    <view class="forminput">
+      <image src="http://business.bim-u.com/WeChatSmallApplication/FCodeImg/index/lock.png"></image>
+      <input type="password" name="password" placeholder="请输入密码..." placeholder-class="placeholder" />
+    </view>
+    <view class="forminput" style="margin-top:170rpx;">
+      <button formType="submit">登录</button>
+    </view>
+  </form>
+
+</view>

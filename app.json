@@ -1,0 +1,21 @@
+{
+  "pages": [      
+    "pages/index/index",  
+    "pages/camera/camera",    
+    "pages/wheel/wheel",    
+    "pages/logs/logs",
+    "pages/scancode/scancode",
+    "pages/map/map",
+    "pages/login/login",    
+    "pages/redpacket/redpacket",
+    "pages/message/message",
+    "pages/form/form",    
+    "pages/fcode/fcode"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  }
+}

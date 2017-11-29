@@ -1,0 +1,12 @@
+<!--camera.wxml-->
+<view class="section">
+  <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/camera/uploadbg.png" id="uploadbg"></image>
+  <view class="uploadblock">
+    <view>欢迎到店</view>
+    <view>请向门店内的活动大使索取兑奖码</view>
+    <view>点击下方<text>"扫一扫"</text>按钮即可领取奖励</view>
+  </view>
+  <view class="uploadbtn">
+    <button style="background:url(http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/camera/btnbg.png);background-size:100% 100%;" bindtap="ScanCode">扫一扫</button>
+  </view>
+</view>

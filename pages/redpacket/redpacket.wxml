@@ -1,0 +1,19 @@
+<!--redpacket.wxml-->
+<view class="section">
+  <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/redpacket/redpacketbg.png"></image>
+  <view class="redpocket">
+     <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/redpacket/redpacketbg1.png"></image> 
+     <view class="redpacketdetail">
+        <view wx:if="{{ ShowMoney }}">恭喜您</view>
+        <view wx:if="{{ ShowMoney }}">{{ Text }}</view>
+        <view wx:if="{{ ShowMoney }}"><text style="font-size:120rpx;">{{ Money }}</text>元</view>
+        <view wx:if="{{ !ShowMoney }}">{{ GiftIntroduction }}</view>
+        <view wx:if="{{ !ShowMoney }}">获奖号码：{{ GiftId }}</view>
+        <view wx:if="{{ !ShowMoney }}">领取密码：{{ GiftPwd }}</view>
+        <view style="font-size:24rpx;padding:0 40rpx;margin-top:80rpx;">请微信搜索并关注公众号</view>
+        <view style="font-size:50rpx;">创境象</view>
+        <view style="margin:0;font-size:24rpx;">点击右下角领取红包按钮领取奖励</view>
+     </view>
+  </view>
+</view>
+

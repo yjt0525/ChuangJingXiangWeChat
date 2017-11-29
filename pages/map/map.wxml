@@ -1,0 +1,35 @@
+<!--map.wxml-->
+
+ <view class="section" style="display:{{ ShowMap }}">
+  <map id="map" longitude="{{ mylng }}" latitude="{{ mylat }}" markers="{{ markers }}" polyline="{{ polyline }}" bindmarkertap="TabRedPocket" scale="14" show-location></map>
+</view> 
+<view class="section" style="position:absolute;left:0;top:0;background:rgba(255,255,255,0.1);z-index:9999999" wx:if="{{ ShowShopDetail }}">
+  <view class="shopdetail">
+    <image src="{{ TaskImg }}" id="taskimg"></image>
+    <image src="{{ LogoImg }}" id="logoimg"></image>
+    <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/map/close.png" id="closeimg" bindtap="CloseDetail"></image>
+    <view class="introduction">
+      <view><text>奇瑞邀请您跟随地图指引，到达地图红包位置</text></view>
+      <view><text>完成试驾享最高50元感恩试驾红包</text></view>
+    </view>
+    <view class="bottomtext">
+      <view class="left">
+        <view><text>{{ CompanyName }}</text></view>
+        <view><text>{{ ShopAddress }}</text></view>
+        <view><text>{{ ShopPhone }}</text></view>
+      </view>
+      <view class="right" bindtap="GoHere">
+        <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/map/gohere.png"></image>
+        <view><text>到这去</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="section" style="position:absolute;width:100%;height:100%;left:0;top:0;" wx:if="{{ ShowRoutes }}">
+  <scroll-view scroll-y style="height: 100%;width:100%;">
+    <view class="routetop">
+      <image src="http://business.bim-u.com/WeChatSmallApplication/RedPacketImg/map/close.png" bindtap="CloseRoutes"></image>
+    </view>
+    <view class="routesline" wx:for="{{ RouteLists }}" wx:key="item">{{ item.instruction }}</view>
+  </scroll-view>
+</view>

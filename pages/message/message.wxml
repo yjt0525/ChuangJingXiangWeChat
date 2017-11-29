@@ -1,0 +1,26 @@
+<!--message.wxml-->
+<view class="section">
+  <view class="imgcover">
+    <image src="{{ BgImg }}" id="BgImg"></image>
+    <view class="top">
+      <view class="left">
+        <image src="{{ LogoImg }}"></image>
+      </view>
+      <view class="right">
+        <image src="{{ StaticImg }}"></image>
+      </view>
+    </view> 
+  </view>
+  <view class="message" wx:if="{{ ShowMessage }}">
+    <view>{{ Message }}</view>
+  </view>
+  <view class="historygift" wx:if="{{ ShowHistoryGift }}">
+    <view class="detail">
+      <image src="img/detail.png"></image>
+      <view wx:if="{{ showredmoney }}"><text class="money">{{ redmoney }}</text>元现金红包</view>
+      <view wx:if="{{ !showredmoney }}">{{ giftintroduct }}</view>
+      <view wx:if="{{ !showredmoney }}">获奖号码：{{ giftid }}</view>
+      <view wx:if="{{ !showredmoney }}">领取密码：{{ giftpwd }}</view>
+    </view>
+  </view>
+</view>

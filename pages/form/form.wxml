@@ -1,0 +1,48 @@
+<!--form.wxml-->
+<view class="section">
+  <image src="{{ Bg }}"></image>
+  <view class="form">
+    <view class="top">感谢您到店体验，请填写资料</view>
+    <view class="inputform">
+      <view class="message">姓名</view>
+      <view class="input">
+        <input type="text" name="name" bindinput="SetName" />
+      </view>
+    </view>
+    <view class="inputform">
+      <view class="message">电话</view>
+      <view class="input">
+        <input type="text" name="phone" bindinput="SetPhone" />
+      </view>
+    </view>
+    <view class="inputform">
+      <view class="message">短信验证</view>
+      <view class="input" style="display:flex;">
+        <input type="text" name="phonecodejudge" style="flex:3" bindinput="SetPhoneCode" />
+        <button disabled="{{ CanNotGet }}" style="flex:2;" class="getcode" bindtap="CountSeconds">{{ ButtonText }}</button>
+      </view>
+    </view>
+    <view class="inputform">
+      <view class="message">图片验证</view>
+      <view class="input" style="display:flex;">
+        <input type="text" name="imgcodejudge" style="flex:3" bindinput="SetPicCode" />
+        <button style="flex:2;background:none;" class="getcode" bindtap="GetImg">
+          <image src="{{ ImgCodeFullPath }}"></image>
+        </button>
+      </view>
+    </view>
+    <view class="inputform">
+      <view class="message">经销商名称</view>
+      <view class="input">
+         <picker bindchange="SetAddress" value="{{ AddressIndex }}" range="{{ AddressArray }}" disabled='{{ ChooseAddress }}'>
+          <view class="picker">
+            {{Address}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="inputform" style="height:80rpx;margin-top:80rpx;">
+      <button bindtap="Submit" class="getgift">领取奖励</button>
+    </view>
+  </view>
+</view>

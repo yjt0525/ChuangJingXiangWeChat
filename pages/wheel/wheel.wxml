@@ -1,0 +1,14 @@
+<!--pages/wheel/wheel.wxml-->
+<view class="wheel-bg">
+  <image src="img/wheel-bg.png"></image>
+</view>
+<view class="container-out">
+  <view class="circle" wx:for="{{circleList}}" wx:key="{{item}}" style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};"></view>
+  <view class="container-in">
+    <view class="content-out" wx:for="{{awardList}}" wx:key="{{item}}" style="top:{{item.topAward}}rpx;left:{{item.leftAward}}rpx;background-color: {{(index==indexSelect)?colorAwardSelect:colorAwardDefault}};">
+      <image src='{{ item.lottery.JackGiftType===0?"/img/redpacket.png":"/img/gift.png" }}' class='{{item.lottery.JackGiftType===0?"redpacketsize":"giftsize"}}'></image>
+      <text>{{ item.lottery.JackGiftType===1?"礼券":(item.lottery.JackGiftType===2?item.lottery.Message:item.lottery.RedEnvelopeMoney+"元红包") }}</text>
+    </view>
+    <view class="start-btn" bindtap="startGame" style=" background-color:{{isRunning?'#e7930a':'#ffe400'}}">START</view>
+  </view>
+</view>

@@ -1,0 +1,57 @@
+/**index.wxss**/
+
+.login {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #253950;
+  overflow: hidden;
+}
+
+.login .loginlogo {
+  width: 300rpx;
+  height: 200rpx;
+  margin: 120rpx auto;
+}
+
+.login .loginlogo image {
+  width: 100%;
+  height: 100%;
+}
+
+.login form {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 120rpx;
+}
+
+.login form .forminput {
+  margin-bottom: 100rpx;
+  height: 80rpx;
+  position: relative;
+}
+
+.login form .forminput image {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 18rpx;
+}
+
+.login form .forminput input {
+  background: #fff;
+  height: 100%;
+  padding-left: 80rpx;
+  border-radius: 40rpx;
+}
+
+.login form .forminput button {
+  color: #fff;
+  background: #287cbd;
+}
+
+.placeholder {
+  font-size: 28rpx;
+}

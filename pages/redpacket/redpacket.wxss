@@ -1,0 +1,44 @@
+/* redpacket.wxss */
+.section{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+.section image{
+  width:100%;
+  height:100%;
+}
+
+.section .redpocket{
+  position:absolute;
+  width:600rpx;
+  height:980rpx;
+  left:50%;
+  top:50%;
+  margin-left:-300rpx;
+  margin-top:-490rpx;
+
+}
+
+.section .redpocket image{
+  width: 100%;
+  height: 100%;
+}
+
+.section .redpocket .redpacketdetail{
+  position: absolute;
+  width:100%;
+  height:500rpx;
+  left:0;
+  top:400rpx;
+  padding-top:10rpx;
+  box-sizing: border-box;
+  text-align: center;
+  color:#f8d292;
+}
+
+.section .redpocket .redpacketdetail view{
+  margin-bottom:10rpx;
+  font-size:30rpx;
+}

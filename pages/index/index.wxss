@@ -1,0 +1,99 @@
+
+.section .imgcover,.section .loadingcover{
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:10;
+}
+
+.section .imgcover #BgImg{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.section .imgcover .top{
+  height:120rpx;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:10;
+  width:100%;
+  padding:20rpx 0;
+  box-sizing: border-box;
+}
+
+.section .imgcover .top .left{
+  float: left;
+  width:40%;
+  border-right:1px solid #fff;
+  height:100%;  
+  text-align: center;
+  
+}
+
+.section .imgcover .top .left image{
+  height:60rpx;
+  width:160rpx;
+  margin-top:10rpx;
+}
+
+.section .imgcover .top .right{
+  float: right;
+  width:59%;
+  height:100%;
+  text-align: center;
+}
+
+.section .imgcover .top .right image{
+  height:80rpx;
+  width:350rpx;
+}
+
+.section .loadingcover{
+  background:rgba(0,0,0,0.5);
+}
+
+.section .loadingcover .loadingbar{
+  width:600rpx;
+  height:40rpx;
+  line-height:40rpx;
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-left: -300rpx;
+  margin-top:-20rpx;
+  background: rgba(0,0,0,0.7);
+  border-radius:40rpx;
+  color:#fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section .loadingcover .loadingbar .loadingbg,.section .loadingcover .loadingbar .loadingtext{
+  width:100%;
+  height:100%;
+  position: absolute;
+  left:0;
+  top:0;
+  border-radius:40rpx;
+  overflow: hidden;
+}
+
+
+.section .loadingcover .loadingbar .loadingbg image{
+  border-radius:40rpx;
+  width:600rpx;
+  height:40rpx;
+}
+
+.section .loadingcover .loadingbar .loadingtext{
+  z-index:10;
+  font-size:24rpx;
+}

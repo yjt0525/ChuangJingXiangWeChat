@@ -1,0 +1,127 @@
+/* map.wxss */
+
+map {
+  height: 100%;
+  width: 100%;
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+}
+
+.shopdetail {
+  box-sizing: border-box;
+  padding: 20rpx;
+  width: 700rpx;
+  height: 720rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -360rpx;
+  margin-left: -350rpx;
+  color: #6a4023;
+  z-index: 30;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.shopdetail #taskimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 31;
+}
+
+.shopdetail #logoimg {
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+  width: 80rpx;
+  height: 60rpx;
+  z-index: 32;
+}
+
+.shopdetail #closeimg {
+  position: absolute;
+  right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  z-index: 32;
+}
+
+.shopdetail .introduction {
+  position: absolute;
+  top: 380rpx;
+  left: 0;
+  width: 100%;
+  z-index: 32;
+}
+
+.shopdetail .introduction view {
+  width: 100%;
+  text-align: center;
+}
+
+.shopdetail .bottomtext {
+  height: 160rpx;
+  width: 100%;
+  position: absolute;
+  bottom: 50rpx;
+  left: 0;
+  z-index: 32;
+}
+
+.shopdetail .bottomtext .left {
+  width: 70%;
+  height: 100%;
+  float: left;
+  border-right: 1px solid #6a4023;
+  text-align: left;
+  padding-left: 50rpx;
+  box-sizing: border-box;
+}
+
+.shopdetail .bottomtext .left view {
+  margin-bottom: 10rpx;
+}
+
+.shopdetail .bottomtext .right {
+  width: 29%;
+  height: 100%;
+  float: right;
+  text-align: center;
+}
+
+.shopdetail .bottomtext .right image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 25rpx;
+}
+
+.routesline {
+  padding: 20rpx 60rpx;
+  border-top: 2rpx sollid #ccc;
+  font-size:28rpx;
+  border-bottom:2rpx solid #ccc;
+}
+
+.routesline:first-child {
+  margin-top: 40rpx;
+}
+
+.routesline:last-child {
+  border-bottom: 2rpx solid #ccc;
+}
+
+.routetop {
+  border-bottom: 2rpx solid #ccc;
+  padding: 20rpx;
+  overflow: hidden;
+}
+
+.routetop image {
+  width: 40rpx;
+  height: 40rpx;
+  float:right;
+}
